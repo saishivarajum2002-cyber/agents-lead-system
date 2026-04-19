@@ -1305,7 +1305,7 @@ async function submitGatedBooking() {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        agentEmail: 'saishivaraju.m2002@gmail.com',
+        agentEmail: agent.email || 'saishivaraju.m2002@gmail.com',
         visit: visit
       })
     });

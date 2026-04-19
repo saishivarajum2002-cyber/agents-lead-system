@@ -1233,7 +1233,7 @@ async function submitGatedBooking() {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'x-api-secret': 'propedge_secret_2026' },
       body: JSON.stringify({
-        agentEmail: 'saishivaraju.m2002@gmail.com',
+        agentEmail: agent.email || 'saishivaraju.m2002@gmail.com',
         visit: visit
       })
     });
